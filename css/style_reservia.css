@@ -1,0 +1,549 @@
+/* |==========                           ==========|
+   |========== Police d'écriture globale ==========|
+   |==========                           ==========|*/
+
+html {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* |==========        ==========|
+   |========== Header ==========|
+   |==========        ==========|*/
+
+header {
+    width: 1280px;
+    max-width: 100%;
+    margin: auto; 
+}
+
+#banniere {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.banniere_logo {
+    margin-right: auto;
+}
+
+#logo_reservia {
+    width: 100px;
+    height: 50px;
+}
+
+header h1 {
+    font-size: 1.2em;
+}
+
+header p {
+    font-size: 1em;
+}
+
+/* |========== Media Query - Header ========== */
+
+@media screen and (max-width: 691px) {
+    .banniere_navigation {
+        display: flex;
+        align-items: center;
+        margin: auto;
+    }
+
+    .banniere_inscription {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    #banniere .banniere_navigation {
+        order: 1;
+    }
+
+    .banniere_navigation ul { 
+        border-top: none;      
+        padding-bottom: 40px;
+        padding-left: 0px;
+    }
+
+    .banniere_navigation .navigation_hebergement a {
+        border-top: none;
+        border-bottom: 4px solid #0065FC;
+        padding-bottom: 20px;
+        padding-right: 40px;
+        padding-left: 40px;
+        font-size: 1em;
+    }
+
+    .banniere_navigation .navigation_activite a {
+        padding-left: 40px;
+        padding-right: 40px;
+        border-bottom: 4px solid #F2F2F2;
+        padding-bottom: 20px;
+        font-size: 1em;
+    }
+
+    .banniere_navigation .navigation_activite a:hover {
+        border-top: none;
+        border-bottom: 4px solid #0065FC;
+        padding-bottom: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    header {
+        padding: 20px;
+        width: auto;
+    }
+}
+
+/* |==========            ==========|
+   |========== Navigation ==========|
+   |==========            ==========|*/
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding-top: 40px;
+    margin-top: 0;
+}
+
+nav li {
+    margin-right: 40px;
+}
+
+.navigation_hebergement a {
+    font-size: 1.3em;
+    font-weight: lighter;
+    padding-bottom: 3px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+    color: #0065FC;
+    border-top: 4px solid #0065FC;
+    padding-top: 40px;
+}
+
+.navigation_activite a {
+    font-size: 1.3em;
+    font-weight: lighter;
+    padding-bottom: 3px;
+    padding-right: 30px;
+    padding-left: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.navigation_activite a:hover {
+    color: #0065FC;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-top: 4px solid #0065FC;
+    padding-top: 40px;
+}
+
+.inscription {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-bottom: 3px;
+    margin-left: 20px;
+    padding-top: 40px;
+    text-decoration: none;
+    color: #0065FC;
+}
+
+/* |==========            ==========|
+   |========== Rechercher ==========|
+   |==========            ==========|*/
+
+.rechercher {
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin: 40px 0 40px 0;
+
+}
+
+.fa-map-marker-alt {
+    border: 1px solid #F2F2F2;
+    padding: 10px;
+    background: #F2F2F2;
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+}
+
+.recherche_reservia {
+    width: 200px;
+    border: 3px solid #F2F2F2;
+    border-right: none;
+    padding: 5px;
+    height: 40px;
+    outline: none;
+}
+
+.recherche_button {
+    width: 150px;
+    height: 40px;
+    border: 1px solid #F2F2F2;
+    background: #0065FC;
+    text-align: center;
+    color: #DEEBFF;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+input::placeholder{
+    font-size: 1.1em;
+    font-weight: 800;
+}  
+
+/* |==========        ==========|
+   |========== Filtre ==========|
+   |==========        ==========|*/
+
+#filtre {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.fa-money-bill-wave, 
+.fa-child,
+.fa-heart,
+.fa-dog {
+    color: #0065FC;
+    background: #DEEBFF;
+    padding: 15px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.fa-child {
+    padding: 15px 18px 15px 18px;
+}
+
+#filtre button {
+    border: 3px solid #F2F2F2;
+    border-left: none;
+    background: none;
+    border-radius: 50vh;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding-left: 0;
+    padding-right: 20px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.fa-info {
+    color: #0065FC;
+    background: none;
+    border: 1px solid #F2F2F2;
+    border-radius: 50%;
+    padding: 5px 10px 5px 10px;
+    margin-right: 15px;
+}
+
+#filtre h2 {
+    font-size: 1em;
+}
+
+/* |========== Media Query - Filtre ========== */
+
+@media screen and (max-width: 908px) {
+    #filtre {
+        display: block;
+    }
+
+    #filtre button {
+        margin-left: 0px;
+    }
+}
+
+/* |==========              ==========|
+   |========== Hébergements ==========|
+   |==========              ==========|*/
+
+#hebergement_et_populaire {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 100%;
+    width: 1280px;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+#hotel_hebergement {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 20px 20px 20px;
+}
+
+.hebergement {
+    height: min-content;
+    padding-bottom: 40px;
+    width: 70%;
+    background-color: #F2F2F2;
+    border-radius: 1%;
+}
+
+.hebergement article {
+    border: 5px solid white;
+    background-color: white;
+    margin: 0 0 20px 0;
+    border-radius: 5%;
+}
+
+.hebergement article img{
+    width: 250px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+.hebergement h2 {
+    padding-left: 30px;
+}
+
+.hebergement a {
+    padding-left: 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.hebergement h3 {
+    margin: 5px 0 5px 10px;
+    font-size: 1em;
+}
+
+.hebergement p {
+    margin: 5px 0 5px 10px;
+    font-size: 0.9em;
+}
+
+.hebergement .fa-star {
+    margin: 5px 0 5px 0;
+}
+
+.hebergement .star_left {
+    margin-left: 10px;
+}
+
+article {
+    box-shadow: 1px 1px 10px gray;
+}
+
+/* |========== Media Query - Hébergements ========== */
+
+@media screen and (max-width: 575px) {
+    .hebergement article img {
+        width: 300px;
+    }
+
+    .hebergement {
+        background-color: white;
+    }
+}
+
+/* |==========            ==========|
+   |========== Populaires ==========|
+   |==========            ==========|*/
+
+#hotel_populaire {
+    display: flex;
+    flex-direction: column;
+}
+
+#populaire {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.hotel_populaire {
+    float: left;
+}
+
+.populaire {
+    width: 30%;
+    margin-left: 40px;
+    background-color: #F2F2F2;
+    border-radius: 1%;
+}
+
+.populaire article {
+    border: 5px solid white;
+    background-color: white;
+    margin: 20px;
+    border-radius: 5%;
+}
+
+.populaire article img {
+    height: 140px;
+    margin-right: 20px;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+
+.populaire h3 {
+    margin: 5px 0 5px 0;
+    font-size: 1em;
+}
+
+.populaire p {
+    margin: 5px 0 5px 0;
+    font-size: 0.9em;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    height: 140px;
+}
+
+.etoile {
+    margin-top: auto;
+}
+
+/* |========== Media Query - Populaires ========== */
+
+@media screen and (max-width: 1075px) {
+    #hebergement_et_populaire {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    .populaire, .hebergement {
+        width: auto;
+        margin: auto;
+    }
+}
+
+/* |==========                  ==========|
+   |========== Couleurs Etoiles ==========|
+   |==========                  ==========|*/
+
+.blue {
+    color: #0065FC;
+}
+
+.f2f2f2 {
+    color: #F2F2F2;
+}
+
+/* |==========           ==========|
+   |========== Activités ==========|
+   |==========           ==========|*/
+
+#activite_marseille {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    max-height: 100%;
+    height: 500px;
+}
+
+.activite article {
+    border: 1px solid #F2F2F2;
+    background-color: white;
+    border-radius: 5%;
+    margin: auto;
+    height: min-content;
+    margin-bottom: 20px;
+}
+
+.activite article img {
+    width: 300px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+#titre_activite {
+    width: 1280px;
+    margin: auto;
+}
+
+#activite_marseille {
+    width: 1280px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.activite h2 {
+    padding-bottom: 20px;
+}
+
+.activite h3 {
+    margin-left: 10px;
+}
+
+/* |========== Media Query - Activités ========== */
+
+@media screen and (max-width: 1235px) {
+    #activite_marseille {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+    }
+
+    #titre_activite {
+        padding-left: 30px;
+    }
+}
+
+/* |==========                ==========|
+   |========== Bas de la Page ==========|
+   |==========                ==========|*/
+
+#a_propos, #nos_hebergements, #assistance {
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+}
+
+footer {
+    display: flex;
+    background-color: #F2F2F2;
+    margin-top: 40px;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer li {
+    margin-bottom: 15px;
+}
+
+footer a {
+    text-decoration: none;
+    margin: 0;
+    color: black;
+}
+
+.fin {
+    width: 1280px;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+/* |========== Media Query - Bas de la Page ========== */
+
+@media screen and (max-width: 1120px) {
+    .fin {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: 30px;
+    }
+    #a_propos, #nos_hebergements, #assistance {
+        margin-right: auto;
+    }
+}
